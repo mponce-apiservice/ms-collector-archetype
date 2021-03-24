@@ -2,7 +2,7 @@ package ec.com.dinersclub.collector.models;
 
 import io.vertx.core.json.JsonObject;
 
-public class Auditoria {
+public class AuditoriaMessage {
 	
 	private String microservice;
 	private String method;
@@ -10,10 +10,10 @@ public class Auditoria {
 	private String request;
 	private String response;
 	
-	public Auditoria() {
+	public AuditoriaMessage() {
     }
 
-    public Auditoria(JsonObject json) {
+    public AuditoriaMessage(JsonObject json) {
     	this.microservice = json.getString("microservice");
     	this.method = json.getString("method");
     	this.date = json.getString("date");
